@@ -1,7 +1,7 @@
 CodeForces Questions
 
 // CodeForces 4A
-Q. Print Summation of an array 
+Q. Print Summation of an array (https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/L)
 public class Practise {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -23,3 +23,33 @@ public class Practise {
     }
 }
 
+CodeForces 71A (https://codeforces.com/problemset/problem/71/A)
+Q. Way too long words
+public class Practise {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            String s=sc.next();
+            if(s.length() > 10){
+                System.out.println(s.charAt(0) + Integer.toString(s.length() - 2) + s.charAt(s.length() - 1));
+            } else {
+                System.out.println(s);
+            }
+        }
+    }
+}
+
+
+CodeForces 617A (https://codeforces.com/problemset/problem/617/A)
+Q. Elephant
+public class Practise {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        long num=sc.nextLong();
+
+        long count = (num+4) / 5; // Add 4 and divide by 5 to round up to the nearest multiple of 5
+
+        System.out.println(count);
+    }
+}
