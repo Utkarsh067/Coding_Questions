@@ -1,7 +1,9 @@
 CodeForces Questions
 
 // CodeForces 4A
-Q. Print Summation of an array (https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/L)
+Q. Print Summation of an array (https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/L)\
+import java.util.Scanner;
+
 public class Practise {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -25,6 +27,8 @@ public class Practise {
 
 CodeForces 71A (https://codeforces.com/problemset/problem/71/A)
 Q. Way too long words
+import java.util.Scanner;
+
 public class Practise {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -43,6 +47,8 @@ public class Practise {
 
 CodeForces 617A (https://codeforces.com/problemset/problem/617/A)
 Q. Elephant
+import java.util.Scanner;
+
 public class Practise {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -56,6 +62,8 @@ public class Practise {
 
 CodeForces Fibonacci (https://codeforces.com/group/MWSDmqGsZm/contest/223339/problem/O)
 Q. Fibonacci
+import java.util.Scanner;
+
 public class Practise {
     public static void main(String[] args) {
         Scanner sc=new Scanner(System.in);
@@ -104,5 +112,26 @@ public class Main{
 
         sum += arr[(int) (arr.length-count)];
         suffix(arr, count+1, m,sum);
+    }
+}
+
+CodeForces 719A (https://codeforces.com/problemset/problem/791/A)
+Q. Bear and Big Brother
+import java.util.Scanner;
+
+public class Practise {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        long limak = sc.nextInt();
+        long bob = sc.nextInt();
+
+        long count=0;
+
+        while(limak <= bob){
+        limak *= 3;
+        bob *= 2;
+        count++;
+        }  
+    System.out.println(count);
     }
 }
