@@ -135,3 +135,24 @@ public class Practise {
     System.out.println(count);
     }
 }
+
+CodeForces 281A (https://codeforces.com/problemset/problem/281/A)
+Q. Word Capitalization
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String word= sc.next();
+
+        System.out.println(capitalization(word));
+    }
+    static String capitalization(String word){
+
+        if(Character.isLowerCase(word.charAt(0)) ){
+            return Character.toUpperCase(word.charAt(0)) + word.substring(1);
+        } else{
+            return word;
+        }
+    }
+}
