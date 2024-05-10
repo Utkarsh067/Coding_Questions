@@ -183,3 +183,26 @@ public class Practise {
         System.out.println(sum);
     }
 }
+
+CodeForces 467A (https://codeforces.com/problemset/problem/467/A)
+Q. George and Accommodation
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        long n=sc.nextLong();
+
+        long count = 0;
+
+        for(int i = 1;i<=n;i++){
+            long p = sc.nextLong();
+            long q = sc.nextLong();
+
+            if(q - p >= 2){
+                count++;
+            }
+        }
+        System.out.println(count);
+    }
+}
