@@ -233,3 +233,38 @@ public class Main {
         }
     }
 }
+
+CodeForces 734A (https://codeforces.com/problemset/problem/734/A)
+Q. Anton and Danik
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        String word=sc.next();
+
+        int A=0;
+        int D=0;
+
+        if(word.length() != n){
+            return;
+        }
+
+        for(int i=0;i<word.length();i++){
+            if(word.charAt(i) == 'A'){
+                A++;
+            } else if(word.charAt(i) == 'D'){
+                D++;
+            }
+        }
+
+        if(A > D){
+            System.out.println("Anton");
+        } else if(D > A){
+            System.out.println("Danik");
+        } else{
+            System.out.println("Friendship");
+        }
+    }
+}
