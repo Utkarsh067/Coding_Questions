@@ -268,3 +268,25 @@ public class Main {
         }
     }
 }
+
+CodeForces 41A (https://codeforces.com/problemset/problem/41/A)
+Q. Translation
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String s=sc.next();
+        String t=sc.next();
+
+        if (t.length() != s.length()) {
+            System.out.println("NO");
+            return;
+        }
+
+        StringBuilder sb = new StringBuilder(s);
+        String reversed = sb.reverse().toString(); 
+
+        System.out.println(t.equals(reversed) ? "YES" : "NO");
+    }
+}
