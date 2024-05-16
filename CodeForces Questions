@@ -347,3 +347,25 @@ public class Main {
         System.out.println(sum);
     }
 }
+
+CodeForces 581A (https://codeforces.com/problemset/problem/581/A)
+Q. Vasya the Hipster
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        long a = sc.nextLong();
+        long b = sc.nextLong();
+
+        if(a == b){
+            System.out.println(a + " " + 0);
+        }
+
+        if(a > b){
+            System.out.print(b + " " + (a-b)/2);
+        } else if (b > a){
+            System.out.print(a + " " + (b-a)/2);
+        }
+    }
+}
