@@ -388,3 +388,36 @@ public class Main{
         }
     }
 }
+
+CodeForces 996A (https://codeforces.com/problemset/problem/996/A)
+Q. Hit the Lottery
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int n= sc.nextInt();
+        long count = 0;
+
+        while(n > 0){
+            if(n >= 100){
+                count++;
+                n -= 100;
+            } else if(n >= 20){
+                count++;
+                n -= 20;
+            } else if(n >= 10){
+                count++;
+                n -= 10;
+            } else if(n >= 5){
+                count++;
+                n -= 5;
+            } else{
+                count++;
+                n -= 1;
+            }
+        }
+
+        System.out.println(count);
+    }
+}
