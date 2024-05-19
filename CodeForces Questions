@@ -421,3 +421,25 @@ public class Main {
         System.out.println(count);
     }
 }
+
+CodeForces 977A (https://codeforces.com/problemset/problem/977/A)
+Q. Wrong Subtraction
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner sc=new Scanner (System.in);
+        long num = sc.nextLong();
+        long k = sc.nextLong();
+
+        for(int i=1;i<=k;i++){
+            if(num % 10 > 0){
+                num--;
+            } else{
+                num /= 10;
+            }
+        }
+
+        System.out.println(num);
+    }
+}
