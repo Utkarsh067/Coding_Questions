@@ -2,7 +2,7 @@
 
 1. Multiply your current value by 10.
 2. Multiply your current value by 20.
-3. 
+ 
 Determine if your value can reach N or not.
 
 **Note: Solve this problem using recursion.**
